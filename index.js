@@ -3,7 +3,7 @@ const res = require('express/lib/response');
 
 
 require('dotenv').config();
-console.log(process.env.PORT);
+
 
 const app = express();
 
@@ -43,5 +43,5 @@ app.get(('/food/southindian'), (req, res)=>{
 })
 
 app.listen(PORT, ()=>{
-    console.log(`server started at port ${PORT}`);
+    console.log(process.env.PORT););
 })
