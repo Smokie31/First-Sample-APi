@@ -13,7 +13,7 @@ let NorthIndian = ['Chole  bhature', 'Naan', 'Poha'];
 let SouthIndian = ['Idli', 'Vada', 'Russam'];
 
 app.listen(PORT, ()=>{
-    console.log('server started at port 5000');
+    console.log(`server started at port ${PORT}`);
 })
 
 app.get(('/'),(req, res)=>{
