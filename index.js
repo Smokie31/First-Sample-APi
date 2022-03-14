@@ -1,9 +1,13 @@
 const express = require('express');
 const res = require('express/lib/response');
 
+
+require('dotenv').config();
+console.log(process.env.PORT);
+
 const app = express();
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 let NorthIndian = ['Chole  bhature', 'Naan', 'Poha'];
 let SouthIndian = ['Idli', 'Vada', 'Russam'];
