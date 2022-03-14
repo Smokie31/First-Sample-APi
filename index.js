@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 5000;
 let NorthIndian = ['Chole  bhature', 'Naan', 'Poha'];
 let SouthIndian = ['Idli', 'Vada', 'Russam'];
 
-app.listen(PORT, ()=>{
-    console.log(`server started at port ${PORT}`);
-})
+
 
 app.get(('/'),(req, res)=>{
     res.send("Welcome ");
@@ -42,4 +40,8 @@ app.get(('/food/southindian'), (req, res)=>{
         price : Math.floor(Math.random() * 100),
         jdk : 1
     });
+})
+
+app.listen(PORT, ()=>{
+    console.log(`server started at port ${PORT}`);
 })
